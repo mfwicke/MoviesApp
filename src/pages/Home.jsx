@@ -1,7 +1,13 @@
 import React from "react";
 
+import HeroSlice from "../components/hero-slice/HeroSlice";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <HeroSlice />
+    </>
+  );
 };
 
 export default Home;
