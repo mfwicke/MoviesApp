@@ -8,7 +8,7 @@ import Button, { OutlineButton } from "../button/Button";
 import Input from "../input/Input";
 
 import tmdbApi, { category, movieType, tvType } from "../../api/tmdbApi";
-import { Keyboard } from "swiper";
+//import { Keyboard } from "swiper";
 
 const MovieGrid = (props) => {
   const [items, setItems] = useState([]);
@@ -41,7 +41,7 @@ const MovieGrid = (props) => {
       setTotalPage(response.total_pages);
     };
     getList();
-  }, [props.category, keyword]);
+  }, [props.category, props.type, keyword]);
 
   const loadMore = async () => {
     let response = null;
