@@ -11,8 +11,8 @@ const CastList = (props) => {
 
   useEffect(() => {
     const getCradits = async () => {
-      const responce = await tmdbApi.credits(category, props.id);
-      setCast(responce.cast.slice(0, 5));
+      const response = await tmdbApi.credits(category, props.id);
+      setCast(response.cast.slice(0, 5));
     };
     getCradits();
   }, [category, props.id]);
@@ -33,3 +33,5 @@ const CastList = (props) => {
     </div>
   );
 };
+
+export default CastList;

@@ -7,29 +7,29 @@ import { SwiperSlide, Swiper } from "swiper/react";
 
 import tmdbApi, { category } from "../../api/tmdbApi";
 
-import MovieCart from "../movie-cart/MovieCart";
+import MovieCard from "../movie-card/MovieCard";
 
 const MovieList = (props) => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
     const getList = async () => {
-      let responce = null;
+      let response = null;
 
       const params = {};
 
       if (props.type !== "similar") {
         switch (props.category) {
           case category.movie:
-            responce = await tmdbApi.getMoviesList(props.type, { params });
+            response = await tmdbApi.getMoviesList(props.type, { params });
             break;
           default:
-            responce = await tmdbApi.getTvList(props.type, { params });
+            response = await tmdbApi.getTvList(props.type, { params });
         }
       } else {
-        responce = await tmdbApi.similar(props.category, props.id);
+        response = await tmdbApi.similar(props.category, props.id);
       }
-      setItems(responce.results);
+      setItems(response.results);
     };
     getList();
   }, []);
@@ -38,7 +38,7 @@ const MovieList = (props) => {
       <Swiper grabCursor={true} spaceBetween={10} slidesPerView={"auto"}>
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <MovieCart item={item} category={props.category} />
+            <MovieCard item={item} category={props.category} />
           </SwiperSlide>
         ))}
       </Swiper>
