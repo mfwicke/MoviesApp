@@ -32,7 +32,7 @@ const MovieList = (props) => {
       setItems(response.results);
     };
     getList();
-  }, []);
+  });
   return (
     <div className="movie-list">
       <Swiper grabCursor={true} spaceBetween={10} slidesPerView={"auto"}>

@@ -31,7 +31,7 @@ const HeroSlice = () => {
       }
     };
     getMovies();
-  }, []);
+  }, [Autoplay]);
 
   return (
     <div className="hero-slide">

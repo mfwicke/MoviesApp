@@ -7,6 +7,7 @@ import apiConfig from "../../api/apiConfig";
 
 const CastList = (props) => {
   const { category } = useParams();
+  // eslint-disable-next-line
   const [cast, setCast] = useState([]);
 
   useEffect(() => {
