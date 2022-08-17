@@ -17,8 +17,8 @@ const Detail = () => {
 
   useEffect(() => {
     const getDetail = async () => {
-      const responce = await tmdbApi.detail(category, id, { params: {} });
-      setItem(responce);
+      const response = await tmdbApi.detail(category, id, { params: {} });
+      setItem(response);
       window.scrollTo(0, 0);
     };
     getDetail();

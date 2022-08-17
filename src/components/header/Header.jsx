@@ -49,7 +49,7 @@ const Header = () => {
       <div className="header__wrap container">
         <div className="logo">
           <img src={logo} alt="logo" />
-          <Link to="/"> tMovies </Link>
+          <Link to="/"> Miguel Movies Rocks </Link>
         </div>
         <ul className="header__nav">
           {headerNav.map((e, i) => (
