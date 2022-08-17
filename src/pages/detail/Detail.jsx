@@ -5,8 +5,8 @@ import tmdbApi from "../../api/tmdbApi";
 import apiConfig from "../../api/apiConfig";
 
 import "./detail.scss";
-import CastList from "./CastList";
-import VideoList from "./VideoList";
+import CastList from "./CastList.jsx";
+import VideoList from "./VideoList.jsx";
 
 import MovieList from "../../components/movie-list/MovieList";
 

@@ -3,7 +3,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Home from "../pages/Home.jsx";
-import Catalog from "../pages/Catalog";
+import Catalog from "../pages/Catalog.jsx";
 import Detail from "../pages/detail/Detail.jsx";
 
 const Routes = () => {

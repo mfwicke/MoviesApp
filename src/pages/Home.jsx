@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { OutlineButton } from "../components/button/Button";
-import HeroSlice from "../components/hero-slice/HeroSlice";
-import MovieList from "../components/movie-list/MovieList";
+import { OutlineButton } from "../components/button/Button.jsx";
+import HeroSlice from "../components/hero-slice/HeroSlice.jsx";
+import MovieList from "../components/movie-list/MovieList.jsx";
 
 import { category, movieType, tvType } from "../api/tmdbApi";
 

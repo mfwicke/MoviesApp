@@ -4,8 +4,8 @@ import { useHistory } from "react-router-dom";
 import SwiperCore, { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import Button, { OutlineButton } from "../button/Button";
-import Modal, { ModalContent } from "../modal/Modal";
+import Button, { OutlineButton } from "../button/Button.jsx";
+import Modal, { ModalContent } from "../modal/Modal.jsx";
 
 import tmdbApi, { category, movieType } from "../../api/tmdbApi";
 import apiConfig from "../../api/apiConfig";

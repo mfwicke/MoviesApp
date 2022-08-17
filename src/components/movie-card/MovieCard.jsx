@@ -4,7 +4,7 @@ import "./movie-card.scss";
 
 import { Link } from "react-router-dom";
 
-import Button from "../button/Button";
+import Button from "../button/Button.jsx";
 
 import { category } from "../../api/tmdbApi";
 import apiConfig from "../../api/apiConfig";

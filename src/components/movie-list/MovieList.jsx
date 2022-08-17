@@ -7,7 +7,7 @@ import { SwiperSlide, Swiper } from "swiper/react";
 
 import tmdbApi, { category } from "../../api/tmdbApi";
 
-import MovieCard from "../movie-card/MovieCard";
+import MovieCard from "../movie-card/MovieCard.jsx";
 
 const MovieList = (props) => {
   const [items, setItems] = useState([]);

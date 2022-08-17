@@ -3,9 +3,9 @@ import { useHistory, useParams } from "react-router-dom";
 
 import "./movie-grid.scss";
 
-import MovieCard from "../movie-card/MovieCard";
-import Button, { OutlineButton } from "../button/Button";
-import Input from "../input/Input";
+import MovieCard from "../movie-card/MovieCard.jsx";
+import Button, { OutlineButton } from "../button/Button.jsx";
+import Input from "../input/Input.jsx";
 
 import tmdbApi, { category, movieType, tvType } from "../../api/tmdbApi";
 //import { Keyboard } from "swiper";
